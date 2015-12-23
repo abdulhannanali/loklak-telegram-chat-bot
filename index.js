@@ -17,8 +17,15 @@ if (process.env.NODE_ENV == 'development') {
  // see README.md for more help
  require('./config/keys.js')()
 
- // in case of development polling
- loklakBot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {polling: true})
+ // in case of development mode poll the chat
+ try {
+   loklakBot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {polling: true})
+   console.log("loklakBot is now running in development mode")
+ }
+ catch (error) {
+   console.error(error)
+   process.exit(1)
+ }
 
  // logger for the bot
  require("./lib/botLogger")(loklakBot)
