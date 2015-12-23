@@ -2,7 +2,7 @@
  * Loklak telegram chat bot using Node.js Telegram API
  * Authors: ["Hannan Ali (abdulhannanali@outlook.com)"] // update this array in case you contribute
  * This is an open source project and we love open source
- * License: MIT LICENSE
+ * License: GNU GPL v3.0 LICENSE
  */
 const TelegramBot = require('node-telegram-bot-api')
 const lodash = require('lodash')
@@ -19,6 +19,9 @@ if (process.env.NODE_ENV == 'development') {
 
  // in case of development polling
  loklakBot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {polling: true})
+
+ // logger for the bot
+ require("./lib/botLogger")(loklakBot)
 }
 else {
  // in production environment keys should be already set as the environment variables
