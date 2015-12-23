@@ -1,6 +1,6 @@
 /*
  * Loklak telegram chat bot using Node.js Telegram API
- * Authors: ["Hannan Ali (abdulhannanali@outlook.com)"] // update this array in case you contribute
+ * Authors: ['Hannan Ali (abdulhannanali@outlook.com)'] // update this array in case you contribute
  * This is an open source project and we love open source
  * License: GNU GPL v3.0 LICENSE
  */
@@ -19,7 +19,7 @@ if (process.env.NODE_ENV == 'development') {
  // in case of development mode polling
  try {
    loklakBot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {polling: true})
-   console.log("loklakBot is now running in development mode")
+   console.log('loklakBot is now running in development mode')
  }
  catch (error) {
    console.error(error)
@@ -27,14 +27,14 @@ if (process.env.NODE_ENV == 'development') {
  }
 
  // logger for the bot
- require("./lib/botLogger")(loklakBot)
+ require('./lib/botLogger')(loklakBot)
 }
 else {
  // in production environment keys should be already set as the environment variables
  // see README.md for more details regarding variables
 
  const PORT = process.env.PORT || 443
- const HOST = process.env.HOST || "0.0.0.0"
+ const HOST = process.env.HOST || '0.0.0.0'
  const externalUrl = process.env.EXTERNAL_URL || 'https://rocky-coast-3915.herokuapp.com'
 
  try {
@@ -46,13 +46,14 @@ else {
      }
    })
 
-   loklakBot.setWebHook(externalUrl + ":443/bot" + process.env.TELEGRAM_BOT_TOKEN)
+   loklakBot.setWebHook(externalUrl + ':443/bot' + process.env.TELEGRAM_BOT_TOKEN)
+   console.log('loklakBot is now running in production mode and webhook has been successfully set up')
  }
  catch (error) {
-   console.log("Error occured while setting up telegram webhook in production")
+   console.log('Error occured while setting up telegram webhook in production')
    console.error(error);
  }
 }
 
 // loklakBotModules
-require("./lib/loklakTelegram.js")(loklakBot)
+require('./lib/loklakTelegram.js')(loklakBot)
