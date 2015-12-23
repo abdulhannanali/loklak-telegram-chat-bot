@@ -1,29 +1,31 @@
 {
-  "name": "lolak-telegram-chat-bot",
+  "name": "loklak-telegram-chat-bot",
   "version": "1.0.0",
-  "description": "telegram chat bot using lolak server api in order to retrieve tweets made as a task for Google CodeIn #GCI 2015",
+  "description": "telegram chat bot using loklak server api in order to retrieve tweets made as a task for Google CodeIn #GCI 2015",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony_default_parameters index.js",
+    "watch": "nodemon --harmony_default_parameters index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abdulhannanali/lolak-telegram-chat-bot.git"
+    "url": "git+https://github.com/abdulhannanali/loklak-telegram-chat-bot.git"
   },
   "keywords": [
     "telegram",
     "chat",
     "bot",
-    "lolak",
+    "loklak",
     "server",
     "tweets"
   ],
   "author": "Hannan Ali (abdulhannanali@outlook.com)",
   "license": "GNU GPL v3.0",
   "bugs": {
-    "url": "https://github.com/abdulhannanali/lolak-telegram-chat-bot/issues"
+    "url": "https://github.com/abdulhannanali/loklak-telegram-chat-bot/issues"
   },
-  "homepage": "https://github.com/abdulhannanali/lolak-telegram-chat-bot#readme",
+  "homepage": "https://github.com/abdulhannanali/loklak-telegram-chat-bot#readme",
   "dependencies": {
     "lodash": "^3.10.1",
     "node-telegram-bot-api": "^0.17.0",
