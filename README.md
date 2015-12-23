@@ -9,7 +9,10 @@ This project is in initial and a lot of the things are being developed. Any cont
 very appreciated. Cool beans. :smile:
 
 ## Running it on your own
-In order to run this first fork this repo
+In order to run this first clone this repo using this command
+```
+git clone https://github.com/abdulhannanali/loklak-telegram-chat-bot
+```
 
 After that run
 ```bash
