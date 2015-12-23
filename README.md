@@ -30,10 +30,10 @@ HOST (The host required for the webhook)
 ```
 
 ## Routes working
-/start - to start the bot
-/search [query] - to retrieve the tweets about the query
-/help - to access the help
-/user - to get the user information (to be implemented yet)
+- /start - to start the bot
+- /search [query] - to retrieve the tweets about the query
+- /help - to access the help
+- /user - to get the user information (to be implemented yet)
 
 ## Integrations (raise an issue or make a PR if you have some in mind)
 - Search the loklak server api and retrieve tweets (done)
