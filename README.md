@@ -1,5 +1,7 @@
 # loklak-telegram-bridge
 
+[![Join the chat at https://gitter.im/abdulhannanali/loklak-telegram-chat-bot](https://badges.gitter.im/abdulhannanali/loklak-telegram-chat-bot.svg)](https://gitter.im/abdulhannanali/loklak-telegram-chat-bot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Integrating loklak with telegram api using [node.js](https://nodejs.org) to search and view stats and graphs on
 telegram.
 
