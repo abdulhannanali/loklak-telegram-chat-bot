@@ -69,8 +69,12 @@ else {
  redisClient = redis.createClient(redisUrl, {})
  if (redisPass) {
    redisClient.auth(redisPass, (error) => {
-     console.error(error)
-     process.exit(1)
+     if (!error) {
+       console.log("redis is now authenticated 🔒")
+     }
+     else {
+       console.error(error)       
+     }
    })
  }
 
