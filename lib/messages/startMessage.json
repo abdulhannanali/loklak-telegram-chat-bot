@@ -1,0 +1,10 @@
+{
+  "text": "Hi Welcome 👋 to 🐮🐮🐮 Loklak Tweet Bot 🐮🐮🐮! \n This is a bot used to search and retrieve tweets, get the user profile info and do a lot more using Loklak API goodness. Also access the help at anytime using /help\nType /search [query] to query for the tweets\nType /user [userprofile] to retrieve information about the user profile\nType /anon to activate the anonymous mode\nType /delete to delete all the information we have of you",
+  "keyboard_markup": [
+    ["/search", "/user"],
+        ["/help"],
+    ["/anon", "/delete"]
+  ],
+  "resize_keyboard": true,
+  "one_time_keyboard": true
+}
