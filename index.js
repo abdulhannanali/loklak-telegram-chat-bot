@@ -68,7 +68,7 @@ else {
  // connecting to the redis database on the url
  redisClient = redis.createClient(redisUrl, {})
  if (redisPass) {
-   redis.auth(redisPass, (error) => {
+   redisClient.auth(redisPass, (error) => {
      console.error(error)
      process.exit(1)
    })
