@@ -28,7 +28,7 @@ if (process.env.NODE_ENV == 'development') {
  // in case of development mode polling
  try {
    loklakBot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {polling: true})
-   console.log('loklakBot is now running in development mode')
+   console.log('loklakBot is now running in development mode 🔨')
  }
  catch (error) {
    console.error(error)
@@ -58,10 +58,10 @@ else {
    })
 
    loklakBot.setWebHook(externalUrl + ':443/bot' + process.env.TELEGRAM_BOT_TOKEN)
-   console.log('loklakBot is now running in production mode and webhook has been successfully set up')
+   console.log('loklakBot is now running in production mode and webhook has been successfully set up 🏭')
  }
  catch (error) {
-   console.log('Error occured while setting up telegram webhook in production')
+   console.log('Error occured while setting up telegram webhook in production 🐛')
    console.error(error);
  }
 
@@ -75,7 +75,7 @@ else {
  }
 
  redisClient.on('error', (error) => {
-   console.log('Failed to connect to the redis database')
+   console.log('Failed to connect to the redis database 🐛')
    console.log("URL = " + redisUrl)
    console.log("Pass ="  + redisPass)
    console.error(error)
@@ -84,7 +84,7 @@ else {
 }
 
 redisClient.on('connect', () => {
-  console.log("connected to the redis database 👍")
+  console.log("connected to the redis database 💾 👍 ")
   // loklakBotModules
   require('./lib/loklakTelegram.js')(loklakBot, redisClient)
 })
