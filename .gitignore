@@ -2,3 +2,4 @@ node_modules/*
 dump.*
 dump.rdb
 justchecking/*
+npm-debug.log
