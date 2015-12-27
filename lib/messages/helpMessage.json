@@ -1,9 +1,8 @@
 {
-  "text": "Hi This is Loklak 🐮 bot help \n Type /search [query] in order to search and retrieve tweets \nType /start in order to get a start message from the bot\nType /help to access this help\nType /anon to be anonymous\nDisclaimer: We store your id in order to maintain a session if you want to be anonymous type /anon\nor after you complete browsing type /delete to delete your data\nExtra: The / slash is recommended but optional",
+  "text": "Hi This is Loklak 🐮 bot help \n Type /search [query] in order to search and retrieve tweets \nType /start in order to get a start message from the bot\nType /help to access this help\n",
   "keyboard_markup": [
     ["/start", "/user"],
-        ["/help"],
-    ["/anon", "/delete"]
+        ["/help"]
   ],
   "one_time_keyboard": true,
   "resize_keyboard": true
