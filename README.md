@@ -47,6 +47,18 @@ HOST (The host required for the webhook)
    - [geocode.json](http://loklak.org/api.html#geocode)
    - [user.json](http://loklak.org/api.html#user)
 
+### Screenshots
+These are some links to screenshots in order to get a feel of how this bot looks and operates like
+
+- [Start screen of loklaktweetbot (You can change for your one)](http://i.imgur.com/UmnRCIR.png)
+- [/start reply screenshot](http://i.imgur.com/kGI7uSE.png)
+- /user sample user retrieval
+  - [image1](http://i.imgur.com/Z45MqNq.png)
+  - [image2](http://i.imgur.com/YOwfcWe.png)
+- /search sample user retrieval
+  - [1 step way](http://i.imgur.com/aDAUEU7.png)
+  - [2 step way](http://i.imgur.com/6ItjGt9.png)
+- [/help reply](http://i.imgur.com/MHhwK8s.png)
 
 ### Contibutions
 Please feel free to make a pull request and raise issues in case of some bugs. We need you 🐮🐄🐮
